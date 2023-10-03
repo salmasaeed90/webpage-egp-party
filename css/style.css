@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* start header */
+header .cover {
+  background-image: url(../bg-img.webp);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+}
+.cover h1,
+.cover p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cover p {
+  margin-top: 30px;
+}
+
+header .box {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  bottom: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: black;
+  transition: all 1s ease-in-out;
+}
+header .box i {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 25px;
+}
+header .box .links {
+  margin: 20px;
+  text-align: center;
+}
+header .box .links a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 22px;
+  text-decoration: none;
+  padding: 30px 0;
+}
+header .box .links a:hover {
+  color: darkred;
+}
+header .open {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  color: #fff;
+  font-size: 25px;
+  transition: all 1s ease-in-out;
+}
+header i {
+  cursor: pointer;
+}
+
+/* start accordion */
+
+.accordion .content .title {
+  background-color: lightcoral;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordion .content .info {
+  background-color: #ccc;
+  text-align: center;
+  /* margin-bottom: 0; */
+  display: none;
+}
+
+/* start count down */
+
+.count-down {
+  background-image: url(../slideshow-1.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.count-down .days,
+.count-down .hours,
+.count-down .minets,
+.count-down .seconds {
+  color: #fff;
+  font-size: 30px;
+  padding: 50px;
+  border: 1px solid #fff;
+  text-align: center;
+}
+/* contact us */
+
+.social i{
+  color: #ccc;
+}
+.social i:hover{
+  background-color: darkred;
+  border-color: darkred;
+  color: #fff;
+}
+
